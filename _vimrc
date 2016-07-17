@@ -1,185 +1,81 @@
-" -----------------------------------------------------------
-" Start Neobundle Settings.
-" -----------------------------------------------------------
-set runtimepath+=~/.vim/bundle/neobundle.vim/
-call neobundle#begin(expand('~/.vim/bundle/'))
+" $B%7%s%?%C%/%9(B
+syntax enable
 
-NeoBundle 'scrooloose/nerdcommenter'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'editorconfig/editorconfig-vim'
-NeoBundle 'jelera/vim-javascript-syntax'
-NeoBundle 'Shougo/neocomplcache'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/vimfiler'
-NeoBundle 'Shougo/vimproc'
-NeoBundle 'mattn/jscomplete-vim'
-NeoBundle 'bronson/vim-trailing-whitespace'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'terryma/vim-multiple-cursors'
-NeoBundle 'tomtom/tcomment_vim'
-NeoBundle 'nathanaelkane/vim-indent-guides'
-NeoBundle 'ingtk/nerdtree'
-
-call neobundle#end()
-
-filetype plugin indent on
-
-NeoBundleCheck
-
-
-" -----------------------------------------------------------
-" nerdtree.
-" -----------------------------------------------------------
-hi Directory guifg=#ff0000 ctermfg=gray
-
-
-" -----------------------------------------------------------
-" nerdcommenter.
-" -----------------------------------------------------------
-let NERDSpaceDelims=1
-nmap <Leader>c <Plug>NERDCommenterToggle
-vmap <Leader>c <Plug>NERDCommenterToggle
-
-
-" -----------------------------------------------------------
-" vim-indent-guides.
-" -----------------------------------------------------------
-NeoBundle 'nathanaelkane/vim-indent-guides'
-let g:indent_guides_enable_on_vim_startup = 1
-
-
-" -----------------------------------------------------------
-" jshint.
-" -----------------------------------------------------------
-let g:syntastic_javascript_checker = ["jshint"]
-
-
-" -----------------------------------------------------------
-" Basic Settings.
-" -----------------------------------------------------------
-
-" 文字コード設定
-set encoding=utf-8
-
-" ファイルエンコーディングの自動判別w
-set fileencodings
-
-" バックアップを取らないw
+" $B9THV9f$rI=<((B
+set number
+" $B2hLL1&2<$N%+!<%=%k0LCVI=<((B
+set ruler
+" $BBP1~$9$k3g8L$r6/D4I=<((B
+set showmatch
+" $B%&%$%s%I%&>e2<C<$K0\F0$7$?;~$N;k3&%^!<%8%s(B;w
+set scrolloff=8
+" $B%&%$%s%I%&:81&C<$K0\F0$7$?;~$N;k3&%^!<%8%s(B;w
+set sidescrolloff=16
+" $BJT=8Cf$G$bJL%U%!%$%k$r3+$/(B
+set hidden
+" vim$B=*N;;~$KL$J]B8%U%!%$%k$O3NG'$9$k(B
+set confirm
+" vim$B0J30$G%U%!%$%kJQ99$,$"$C$?;~$K<+F0FI$_9~$_(B
+set autoread
+" $B%P%C%/%"%C%W$rJ]B8$7$J$$(B
 set nobackup
-
-" 改行コードの自動認識
+" $B%9%o%C%W%U%!%$%k$rJ]B8$7$J$$(B
+set noswapfile
+" $B8!:wJ8;zNs$N%O%$%i%$%H(B
+set hlsearch
+" $B3NDjA0$+$i8!:w$r9T$&(B
+set incsearch
+" $BBgJ8;z>.J8;z$r6hJL$7$J$$(B
+set ignorecase
+" $BBgJ8;z$H>.J8;z$,:.:_$9$k>l9g$O6hJL$9$k(B
+set smartcase
+" $B:G8eHx$N8!:w8uJd$K$?$I$jCe$$$?$i@hF,$KLa$k(B
+set wrapscan
+" $B%?%V$r%9%Z!<%9$KCV$-49$($k(B
+set expandtab
+" $B%?%VJ8;z$r(B2$BJ8;zJ,$K@_Dj(B
+set tabstop=2
+" $B<+F0%$%s%G%s%H$G$:$l$kI}(B
+set shiftwidth=2
+" $BO"B3$7$?6uGr$KBP$7$F%+!<%=%k$,F0$/I}(B
+set softtabstop=2
+" $B2~9T;~$KA0$N9T$N%$%s%G%s%H$r7Q>5$9$k(B
+set autoindent
+" $B2~9T;~$KF~NO$5$l$?9T$NKvHx$K9g$o$;$F%$%s%G%s%H$rA}8:(B
+set smartindent
+" $B%/%j%C%W%\!<%I$r%l%8%9%?;XDj$J$7$G(Byank, put$B$G$-$k$h$&$K$9$k(B
+set clipboard=unnamed,unnamedplus
+" $B%^%&%9F~NO$r<u$1IU$1$k(B
+set mouse=a
+" $B%3%^%s%I%i%$%s%b!<%I$G%?%V$K$h$k%U%!%$%kL>Jd40(B
+set wildmenu wildmode=list:longest,full
+" $B%3%^%s%I%i%$%s%b!<%I$GMzNr$r(B10000$B7oJ]B8$9$k(B
+set history=10000
+" $B%(%s%3!<%I@_Dj(B
+set encoding=utf-8
+set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
 set fileformats=unix,dos,mac
 
-" タブの文字数を4にする
-set tabstop=4
+" $B%3%^%s%I%i%$%s%b!<%I4JN,2=$N$?$aJQ99(B
+nnoremap ; :
+nnoremap : ;
+vnoremap ; :
+vnoremap : ;
 
-" タブ入力を空白文字にする
-set expandtab
+" $B8!:w=*$o$C$?8e$K%O%$%i%$%H:o=|(B
+nnoremap <silent> <Esc><Esc> :<C-u>nohlsearch<R>
 
-" バックスペースでインデント、改行を削除する
-set backspace=indent,eol,start
+" $B4m81$J%3%^%s%I$rL58z2=(B
+nnoremap ZZ <Nop>
+nnoremap ZQ <Nop>
 
-" 括弧の入力時にカーソルを対応する括弧の上に一定時間表示する
-set showmatch
+" $B%b!<%I@ZBXMQ$N%-!<%^%C%WJQ99(B
+inoremap <C-j> <Esc>
 
-" 補完時に補完候補を表示する
-set wildmenu
+" $BCV49%3%^%s%I4JN,2=(B
+nnoremap gs :<C-u>%s///g<Left><Left><Left>
+vnoremap gs :s///g<Left><Left><Left>
 
-" スワップファイルを作成しない
-set directory=
-
-" 挿入モードで<Ctr-k>でクリップボードの内容を貼り付ける
-imap <C-k> <ESC>"*pa
-
-" 挿入モードで<Ctr-j>でモード変更
-imap <C-j> <esc>
-
-" ピープ音を鳴らさない
-set vb t_vb=
-
-" 括弧の補完
-imap [ []<left>
-imap { {}<left>
-imap ( ()<left>
-
-" 起動時のメッセージを表示しない
-set shortmess+=I
-
-" 予測変換
-set completeopt=menuone
-for k in split("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_",'\zs')
-  exec "imap " . k . " " . k . "<C-N><C-P>"
-endfor
-imap <expr> <TAB> pumvisible() ? "\<Down>" : "\<Tab>"
-
-hi Pmenu ctermbg=17
-hi PmenuSel ctermbg=20
-hi PmenuSbar ctermbg=235
-hi PmenuThumb ctermbg=250
-
-" 全角スペースを表示する
-" augroup highlightIdegraphicSpace
-"     autocmd!
-"     autocmd Colorscheme * highlight IdeographicSpace term=underline ctermbg=DarkGreen guibg=DarkGreen
-"     autocmd VimEnter,WinEnter * match IdeographicSpace /　/
-" augroup END
-
-
-" -----------------------------------------------------------
-" Search Settings.
-" -----------------------------------------------------------
-
-" 大文字と小文字を区別しない
-set ignorecase
-
-" 検索の時に大文字が含まれて言う場合は区別する
-set smartcase
-
-" インクリメントサーチ
-set incsearch
-
-" 検索時にファイルの最初に戻さない
-set nowrapscan
-
-" <esc>2回で検索ハイライトをやめる
-nmap <Esc><Esc> :nohlsearch<CR><Esc>
-
-
-" -----------------------------------------------------------
-" View Settings.
-" -----------------------------------------------------------
-
-" 行番号表示
-set number
-
-" タイトル表示
-set title
-
-" ルーラー表示
-set ruler
-
-" 入力中のコマンドをステータスに表示
-set showcmd
-
-" ステータスラインを常に表示
-set laststatus=2
-
-" シンタックスハイライト有効
-syntax on
-
-" コメントの色を変更
-highlight Comment ctermfg=darkgray
-
-" 検索結果文字のハイライト有効
-set hlsearch
-
-" ウインドウ幅よりも長い行を折り返す
-set wrap
-
-
-" -----------------------------------------------------------
-" Edit Settings.
-" -----------------------------------------------------------
-
-" 選択した文字をクリップボードに貼り付ける
-set clipboard=unnamed,autoselect
+" $B%R!<%W2;L58z(B
+set visualbell t_vb=
+set noerrorbells
