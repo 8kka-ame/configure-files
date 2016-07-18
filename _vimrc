@@ -79,3 +79,6 @@ vnoremap gs :s///g<Left><Left><Left>
 " ヒープ音無効
 set visualbell t_vb=
 set noerrorbells
+
+" コメントの色を変更
+hi Comment ctermfg=DarkGray
