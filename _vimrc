@@ -1,84 +1,83 @@
-" $B%7%s%?%C%/%9(B
+" е╖еєе┐е├епе╣
 syntax enable
 
-" $B9THV9f$rI=<((B
+" ╣╘╚╓╣цдЄ╔╜╝и
 set number
-" $B2hLL1&2<$N%+!<%=%k0LCVI=<((B
+" ▓ш╠╠▒ж▓╝д╬елб╝е╜еы░╠├╓╔╜╝и
 set ruler
-" $BBP1~$9$k3g8L$r6/D4I=<((B
+" ┬╨▒■д╣ды│ч╕╠дЄ╢п─┤╔╜╝и
 set showmatch
-" $B%&%$%s%I%&>e2<C<$K0\F0$7$?;~$N;k3&%^!<%8%s(B;w
+" ежедеєе╔еж╛х▓╝├╝д╦░▄╞░д╖д┐╗■д╬╗ы│же▐б╝е╕еє;w
 set scrolloff=8
-" $B%&%$%s%I%&:81&C<$K0\F0$7$?;~$N;k3&%^!<%8%s(B;w
+" ежедеєе╔еж║╕▒ж├╝д╦░▄╞░д╖д┐╗■д╬╗ы│же▐б╝е╕еє;w
 set sidescrolloff=16
-" $BJT=8Cf$G$bJL%U%!%$%k$r3+$/(B
+" ╩╘╜╕├цд╟дт╩╠е╒ебедеыдЄ│лдп
 set hidden
-" vim$B=*N;;~$KL$J]B8%U%!%$%k$O3NG'$9$k(B
+" vim╜к╬╗╗■д╦╠д╩▌┬╕е╒ебедеыд╧│╬╟зд╣ды
 set confirm
-" vim$B0J30$G%U%!%$%kJQ99$,$"$C$?;~$K<+F0FI$_9~$_(B
+" vim░╩│░д╟е╒ебедеы╩╤╣╣дмдвд├д┐╗■д╦╝л╞░╞╔д▀╣■д▀
 set autoread
-" $B%P%C%/%"%C%W$rJ]B8$7$J$$(B
+" е╨е├епеве├е╫дЄ╩▌┬╕д╖д╩дд
 set nobackup
-" $B%9%o%C%W%U%!%$%k$rJ]B8$7$J$$(B
+" е╣еяе├е╫е╒ебедеыдЄ╩▌┬╕д╖д╩дд
 set noswapfile
-" $B8!:wJ8;zNs$N%O%$%i%$%H(B
+" ╕б║ў╩╕╗·╬єд╬е╧едещеде╚
 set hlsearch
-" $B3NDjA0$+$i8!:w$r9T$&(B
+" │╬─ъ┴░длдщ╕б║ўдЄ╣╘дж
 set incsearch
-" $BBgJ8;z>.J8;z$r6hJL$7$J$$(B
+" ┬ч╩╕╗·╛о╩╕╗·дЄ╢ш╩╠д╖д╩дд
 set ignorecase
-" $BBgJ8;z$H>.J8;z$,:.:_$9$k>l9g$O6hJL$9$k(B
+" ┬ч╩╕╗·д╚╛о╩╕╗·дм║о║▀д╣ды╛ь╣чд╧╢ш╩╠д╣ды
 set smartcase
-" $B:G8eHx$N8!:w8uJd$K$?$I$jCe$$$?$i@hF,$KLa$k(B
+" ║╟╕х╚°д╬╕б║ў╕ї╩фд╦д┐д╔дъ├хддд┐дщ└ш╞мд╦╠сды
 set wrapscan
-" $B%?%V$r%9%Z!<%9$KCV$-49$($k(B
+" е┐е╓дЄе╣е┌б╝е╣д╦├╓дн┤╣диды
 set expandtab
-" $B%?%VJ8;z$r(B2$BJ8;zJ,$K@_Dj(B
+" е┐е╓╩╕╗·дЄ2╩╕╗·╩мд╦└▀─ъ
 set tabstop=2
-" $B<+F0%$%s%G%s%H$G$:$l$kI}(B
+" ╝л╞░едеєе╟еєе╚д╟д║дьды╔¤
 set shiftwidth=2
-" $BO"B3$7$?6uGr$KBP$7$F%+!<%=%k$,F0$/I}(B
+" ╧в┬│д╖д┐╢ї╟Єд╦┬╨д╖д╞елб╝е╜еыдм╞░дп╔¤
 set softtabstop=2
-" $B2~9T;~$KA0$N9T$N%$%s%G%s%H$r7Q>5$9$k(B
+" ▓■╣╘╗■д╦┴░д╬╣╘д╬едеєе╟еєе╚дЄ╖╤╛╡д╣ды
 set autoindent
-" $B2~9T;~$KF~NO$5$l$?9T$NKvHx$K9g$o$;$F%$%s%G%s%H$rA}8:(B
+" ▓■╣╘╗■д╦╞■╬╧д╡дьд┐╣╘д╬╦Ў╚°д╦╣чдяд╗д╞едеєе╟еєе╚дЄ┴¤╕║
 set smartindent
-" $B%/%j%C%W%\!<%I$r%l%8%9%?;XDj$J$7$G(Byank, put$B$G$-$k$h$&$K$9$k(B
+" епеъе├е╫е▄б╝е╔дЄеье╕е╣е┐╗╪─ъд╩д╖д╟yank, putд╟дндыдшджд╦д╣ды
 set clipboard=unnamed,unnamedplus
-" $B%^%&%9F~NO$r<u$1IU$1$k(B
-set mouse=a
-" $B%3%^%s%I%i%$%s%b!<%I$G%?%V$K$h$k%U%!%$%kL>Jd40(B
+" е│е▐еєе╔ещедеєетб╝е╔д╟е┐е╓д╦дшдые╒ебедеы╠╛╩ф┤░
 set wildmenu wildmode=list:longest,full
-" $B%3%^%s%I%i%$%s%b!<%I$GMzNr$r(B10000$B7oJ]B8$9$k(B
+" е│е▐еєе╔ещедеєетб╝е╔д╟═·╬ЄдЄ10000╖я╩▌┬╕д╣ды
 set history=10000
-" $B%(%s%3!<%I@_Dj(B
+" еиеєе│б╝е╔└▀─ъ
 set encoding=utf-8
-set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+set fileencodings=euc-jp,sjis,utf-8
 set fileformats=unix,dos,mac
 
-" $B%3%^%s%I%i%$%s%b!<%I4JN,2=$N$?$aJQ99(B
+" е│е▐еєе╔ещедеєетб╝е╔┤╩╬м▓╜д╬д┐дс╩╤╣╣
 nnoremap ; :
 nnoremap : ;
 vnoremap ; :
 vnoremap : ;
 
-" $B8!:w=*$o$C$?8e$K%O%$%i%$%H:o=|(B
+" ╕б║ў╜кдяд├д┐╕хд╦е╧едещеде╚║я╜№
 nnoremap <silent> <Esc><Esc> :<C-u>nohlsearch<R>
 
-" $B4m81$J%3%^%s%I$rL58z2=(B
+" ┤э╕▒д╩е│е▐еєе╔дЄ╠╡╕·▓╜
 nnoremap ZZ <Nop>
 nnoremap ZQ <Nop>
 
-" $B%b!<%I@ZBXMQ$N%-!<%^%C%WJQ99(B
+" етб╝е╔└┌┬╪═╤д╬енб╝е▐е├е╫╩╤╣╣
 inoremap <C-j> <Esc>
 
-" $BCV49%3%^%s%I4JN,2=(B
+" ├╓┤╣е│е▐еєе╔┤╩╬м▓╜
 nnoremap gs :<C-u>%s///g<Left><Left><Left>
 vnoremap gs :s///g<Left><Left><Left>
 
-" $B%R!<%W2;L58z(B
+" е╥б╝е╫▓╗╠╡╕·
 set visualbell t_vb=
 set noerrorbells
 
-" $B%3%a%s%H$N?'$rJQ99(B
+" е│есеєе╚д╬┐здЄ╩╤╣╣
 hi Comment ctermfg=DarkGray
+
