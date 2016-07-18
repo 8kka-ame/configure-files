@@ -1,83 +1,83 @@
-" ���󥿥å���
+" シンタックス
 syntax enable
 
-" ���ֹ��ɽ��
+" 行番号を表示
 set number
-" ���̱����Υ����������ɽ��
+" 画面右下のカーソル位置表示
 set ruler
-" �б������̤�Ĵɽ��
+" 対応する括弧を強調表示
 set showmatch
-" ������ɥ��岼ü�˰�ư�������λ볦�ޡ�����;w
+" ウインドウ上下端に移動した時の視界マージン;w
 set scrolloff=8
-" ������ɥ�����ü�˰�ư�������λ볦�ޡ�����;w
+" ウインドウ左右端に移動した時の視界マージン;w
 set sidescrolloff=16
-" �Խ���Ǥ��̥ե�����򳫤�
+" 編集中でも別ファイルを開く
 set hidden
-" vim��λ����̤��¸�ե�����ϳ�ǧ����
+" vim終了時に未保存ファイルは確認する
 set confirm
-" vim�ʳ��ǥե������ѹ������ä����˼�ư�ɤ߹���
+" vim以外でファイル変更があった時に自動読み込み
 set autoread
-" �Хå����åפ���¸���ʤ�
+" バックアップを保存しない
 set nobackup
-" ����åץե��������¸���ʤ�
+" スワップファイルを保存しない
 set noswapfile
-" ����ʸ����Υϥ��饤��
+" 検索文字列のハイライト
 set hlsearch
-" ���������鸡����Ԥ�
+" 確定前から検索を行う
 set incsearch
-" ��ʸ����ʸ������̤��ʤ�
+" 大文字小文字を区別しない
 set ignorecase
-" ��ʸ���Ⱦ�ʸ�������ߤ�����϶��̤���
+" 大文字と小文字が混在する場合は区別する
 set smartcase
-" �Ǹ����θ�������ˤ��ɤ��夤������Ƭ�����
+" 最後尾の検索候補にたどり着いたら先頭に戻る
 set wrapscan
-" ���֤򥹥ڡ������֤�������
+" タブをスペースに置き換える
 set expandtab
-" ����ʸ����2ʸ��ʬ������
+" タブ文字を2文字分に設定
 set tabstop=2
-" ��ư����ǥ�ȤǤ������
+" 自動インデントでずれる幅
 set shiftwidth=2
-" Ϣ³����������Ф��ƥ������뤬ư����
+" 連続した空白に対してカーソルが動く幅
 set softtabstop=2
-" ���Ի������ιԤΥ���ǥ�Ȥ�Ѿ�����
+" 改行時に前の行のインデントを継承する
 set autoindent
-" ���Ի������Ϥ��줿�Ԥ������˹�碌�ƥ���ǥ�Ȥ�����
+" 改行時に入力された行の末尾に合わせてインデントを増減
 set smartindent
-" ����åץܡ��ɤ�쥸��������ʤ���yank, put�Ǥ���褦�ˤ���
+" クリップボードをレジスタ指定なしでyank, putできるようにする
 set clipboard=unnamed,unnamedplus
-" ���ޥ�ɥ饤��⡼�ɤǥ��֤ˤ��ե�����̾�䴰
+" コマンドラインモードでタブによるファイル名補完
 set wildmenu wildmode=list:longest,full
-" ���ޥ�ɥ饤��⡼�ɤ������10000����¸����
+" コマンドラインモードで履歴を10000件保存する
 set history=10000
-" ���󥳡�������
+" エンコード設定
 set encoding=utf-8
-set fileencodings=euc-jp,sjis,utf-8
+set fileencoding=utf-8
 set fileformats=unix,dos,mac
 
-" ���ޥ�ɥ饤��⡼�ɴ�ά���Τ����ѹ�
+" コマンドラインモード簡略化のため変更
 nnoremap ; :
 nnoremap : ;
 vnoremap ; :
 vnoremap : ;
 
-" ��������ä���˥ϥ��饤�Ⱥ��
+" 検索終わった後にハイライト削除
 nnoremap <silent> <Esc><Esc> :<C-u>nohlsearch<R>
 
-" �����ʥ��ޥ�ɤ�̵����
+" 危険なコマンドを無効化
 nnoremap ZZ <Nop>
 nnoremap ZQ <Nop>
 
-" �⡼�������ѤΥ����ޥå��ѹ�
+" モード切替用のキーマップ変更
 inoremap <C-j> <Esc>
 
-" �ִ����ޥ�ɴ�ά��
+" 置換コマンド簡略化
 nnoremap gs :<C-u>%s///g<Left><Left><Left>
 vnoremap gs :s///g<Left><Left><Left>
 
-" �ҡ��ײ�̵��
+" ヒープ音無効
 set visualbell t_vb=
 set noerrorbells
 
-" �����Ȥο����ѹ�
+" コメントの色を変更
 hi Comment ctermfg=DarkGray
 
